@@ -1,0 +1,23 @@
+<input type="text" [(ngModel)]="searchName" placeholder="Pesquise por nome ou número">
+<button (click)="getPokemon()">Pesquisar</button>
+
+<!-- <input type="text" (input)="getPokemon($any($event.target).value) teste de pesquisa ao digitar -->
+
+<div class="card">
+  <div class="card__title">
+    <span>#{{ pokemon.id }}</span>
+    <h3> {{ pokemon.name }} </h3>
+  </div>
+
+  <div class="card__body">
+    <img [src]="pokemon.sprites.front_default" alt="pkmn_img">
+  </div>
+
+  <div class="card__stats">
+    <span class="card__stats__type"
+    *ngFor="let t of pokemon.types"
+    [style.background-color]="getBackgroundColor(t.type.name)">
+    {{ t.type.name }}
+    </span>
+  </div>
+</div>

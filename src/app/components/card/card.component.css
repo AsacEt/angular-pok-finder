@@ -1,0 +1,71 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card {
+  width: 250px;
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(12, 12, 12);
+  border-radius: 10px;
+
+  -webkit-box-shadow: 10px 16px 10px -5px rgba(0,0,0,0.7);
+  -moz-box-shadow: 10px 16px 10px -5px rgba(0,0,0,0.7);
+  box-shadow: 10px 16px 10px -5px rgba(0,0,0,0.7);
+}
+
+.card__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.card__title > span {
+  color: white;
+  font-weight: 400;
+}
+
+.card__title > h3 {
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.card__body {
+  width: 90%;
+  height: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: rgba(70, 70, 70, 0.432);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__body > img {
+  height: 100%;
+}
+
+.card__stats {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card__stats__type {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  border-radius: 10px;
+
+  padding: 5px;
+  margin-right: 5px;
+}
